@@ -2,7 +2,7 @@
 <!-- Header: animated typing SVG -->
 <p align="center">
   <img 
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=2600&pause=1300&color=2D4760&center=true&vCenter=true&width=1100&lines=Hi%2C+I'm+Esteban+Javier+Berumen+Nieto;Data+Engineer+%7C+Delta+Lakes+%7C+Solution+Architect;ETL+Pipelines+%7C+ML%2FDL+%7C+Azure+DataBricks;Turning+data+into+decisions"
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=2600&pause=1300&color=00b3b3&center=true&vCenter=true&width=1100&lines=Hi%2C+I'm+Esteban+Javier+Berumen+Nieto;Data+Engineer+%7C+Delta+Lakes+%7C+Solution+Architect;ETL+Pipelines+%7C+ML%2FDL+%7C+Azure+DataBricks;Turning+data+into+decisions"
     alt="Typing intro"
   />
 </p>
