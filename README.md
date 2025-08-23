@@ -2,7 +2,7 @@
 <!-- Header: animated typing SVG -->
 <p align="center">
   <img 
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=2600&pause=1300&color=00CFFF&center=true&vCenter=true&width=1100&lines=Hi%2C+I'm+Esteban+Javier+Berumen+Nieto;Data+Engineer+%7C+Delta+Lakes+%7C+Solution+Architect;ETL+Pipelines+%7C+ML%2FDL+%7C+Azure+DataBricks;Turning+data+into+decisions"
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=2600&pause=1300&color=000080&center=true&vCenter=true&width=1100&lines=Hi%2C+I'm+Esteban+Javier+Berumen+Nieto;Data+Engineer+%7C+Delta+Lakes+%7C+Solution+Architect;ETL+Pipelines+%7C+ML%2FDL+%7C+Azure+DataBricks;Turning+data+into+decisions"
     alt="Typing intro"
   />
 </p>
@@ -81,6 +81,7 @@
 - 📊 **Business Dashboards**: Developed Power BI solutions for actionable insights.    
 
 > *Ask me about: Delta Lake best practices (schema evolution, time travel), partitioning strategies, late-arrival handling, and efficient Polars pipelines.*
+“Data transforms decisions. I transform data.”
 
 ---
 
@@ -104,7 +105,3 @@
 <p align="center">
   <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XTEP63&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
-
-
----
-✨ *“Data transforms decisions. I transform data.”* ✨
