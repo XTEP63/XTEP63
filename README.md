@@ -1,107 +1,83 @@
-<!-- Banner or GIF optional -->
-<!-- Header: animated typing SVG -->
-<p align="center">
-  <img 
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=2600&pause=1300&color=00b3b3&center=true&vCenter=true&width=1100&lines=Hi%2C+I'm+Esteban+Javier+Berumen+Nieto;Data+Engineer+%7C+Delta+Lakes+%7C+Solution+Architect;ETL+Pipelines+%7C+ML%2FDL+%7C+Azure+DataBricks;Turning+data+into+decisions"
-    alt="Typing intro"
-  />
+<div align="center">
+
+# Esteban Javier Berumen Nieto
+
+### Cloud Data Engineer · Databricks · Spark · AWS · Azure
+
+I build reliable data pipelines and platforms with an emphasis on automation,
+distributed processing, and performance.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Esteban_Berumen-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/estebanberumen1703)
+[![GitHub](https://img.shields.io/badge/GitHub-XTEP63-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/XTEP63)
+[![Email](https://img.shields.io/badge/Email-Let's_talk-334155?style=flat-square&logo=gmail&logoColor=white)](mailto:estebanjbn@gmail.com)
+
+</div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/data-platform-flow.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/data-platform-flow.svg">
+  <img alt="Animated data platform flow: sources, ingestion, Spark and Databricks processing, Delta Lake, and analytics" src="./assets/data-platform-flow.svg" width="100%">
+</picture>
+
+## What I build
+
+- **Cloud data pipelines** that move from ingestion to trusted, analytics-ready datasets.
+- **Distributed processing workflows** with Spark and Databricks, designed for scale and maintainability.
+- **Data platform layers** using Delta Lake, Parquet, SQL, and medallion-style architecture.
+- **Automation and performance improvements** that make recurring data workloads faster and easier to operate.
+
+```text
+ingest  →  validate  →  transform  →  model  →  serve  →  observe
+```
+
+## Core toolbox
+
+| Focus | Technologies |
+| --- | --- |
+| Engineering | Python · SQL · Apache Spark · Databricks |
+| Cloud & storage | AWS · Azure · Delta Lake · Apache Parquet |
+| Platform & delivery | Git · Docker · GitHub Actions · PostgreSQL |
+
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-0F172A?style=flat-square&logo=python&logoColor=60A5FA">
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-0F172A?style=flat-square&logo=postgresql&logoColor=38BDF8">
+  <img alt="Apache Spark" src="https://img.shields.io/badge/Apache_Spark-0F172A?style=flat-square&logo=apachespark&logoColor=F97316">
+  <img alt="Databricks" src="https://img.shields.io/badge/Databricks-0F172A?style=flat-square&logo=databricks&logoColor=FF3621">
+  <img alt="AWS" src="https://img.shields.io/badge/AWS-0F172A?style=flat-square&logo=amazonwebservices&logoColor=FF9900">
+  <img alt="Azure" src="https://img.shields.io/badge/Azure-0F172A?style=flat-square&logo=microsoftazure&logoColor=38BDF8">
+  <img alt="Delta Lake" src="https://img.shields.io/badge/Delta_Lake-0F172A?style=flat-square&logo=databricks&logoColor=22D3EE">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-0F172A?style=flat-square&logo=docker&logoColor=2496ED">
 </p>
 
+## Selected work
 
+| Project | What it demonstrates | Stack |
+| --- | --- | --- |
+| [**GBM Portfolio USA Tracker**](https://github.com/XTEP63/gbm_portfolio_tool) | A local data product that turns daily Excel snapshots into landing, bronze, silver, and gold layers; publishes Parquet/CSV facts and an HTML report. | Python · Pandas · Parquet · Jinja · YAML |
+| [**IMEDIA Project v2**](https://github.com/XTEP63/IMEDIA_Project_v2) | A reproducible Reddit ingestion and processing pipeline with raw, bronze, and silver layers, analytical storage, an API, and an interactive UI. | Python · Polars · Parquet · SQLite · FastAPI · Streamlit · Docker |
+| [**Jalisco Connection Points**](https://github.com/XTEP63/Streamlit_Conection_Points_Jalisco) | An interactive app that explores public connectivity data and evaluates a KNN model for bandwidth classification. | Python · Streamlit · scikit-learn · Pandas |
+| [**Wastewater SARS-CoV-2**](https://github.com/XTEP63/Wastewater-SARS-CoV-2) | A time-series study built from CDC wastewater data, including preprocessing, baselines, forecasting, and geographic propagation analysis. | Python · Jupyter · LSTM · Transformers · CDC API |
 
-<!-- Sub-banner GIF (replace src with your own if you want a custom vibe) -->
-<p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coding banner" width="400" />
-</p>
+> Public repositories show selected personal and academic work. My professional focus is cloud data engineering across Databricks, Spark, AWS, and Azure.
 
-<h3 align="center">Data Engineer | Data Architect | Machine Learning & Fraud Detection | Lifelong Learner</h3>
+## Engineering activity
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/estebanberumen1703">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://github.com/XTEP63">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" />
-  </a>
-  <a href="mailto:estebanjbn@gmail.com">
-    <img src="https://img.shields.io/badge/Personal%20Email-D14836?style=flat&logo=gmail&logoColor=white" />
-  </a>
-  <a href="mailto:esteban.berumen@bradescard.com.mx">
-    <img src="https://img.shields.io/badge/Work%20Email-0A66C2?style=flat&logo=microsoft-outlook&logoColor=white" />
-  </a>
-</p>
+<div align="center">
+  <img alt="Esteban's GitHub metrics" src="./assets/github-metrics.svg" width="760">
+</div>
+
+<details>
+<summary><strong>Contribution stream</strong></summary>
+<br>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/XTEP63/XTEP63/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/XTEP63/XTEP63/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/XTEP63/XTEP63/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
+</details>
 
 ---
 
-## 👨‍💻 About Me
-
-- 💼 Data Engineer with experience in **ETL automation, Delta Lakes, and partitioned Parquets**.  
-- ⚙️ Skilled in **Azure Databricks**, **SQL Server**, **Teradata**, and scalable data pipelines.  
-- 🧠 Strong background in **Machine Learning / Deep Learning** (GANs, LSTMs, time series, fraud detection).  
-- 📊 Experienced in building internal tools that optimized critical processes, reducing runtimes by **up to 90%**.  
-- 🎯 End-to-end approach: from **data ingestion & modeling** to **actionable insights** and **business value**.  
-- 🌱 Currently learning: **Portuguese 🇵🇹, Azure Cloud ☁️, and Prefect ⚙️**.  
-
----
-
-## 🛠️ Tech Stack  
-
-### Programming & Data
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=databricks&logoColor=white)
-![CQL](https://img.shields.io/badge/CQL-1287B1?style=for-the-badge&logo=apache-cassandra&logoColor=white)
-
-### Data Engineering & Tools
-![Azure](https://img.shields.io/badge/Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-FC6D26?style=for-the-badge&logo=databricks&logoColor=white)
-![Delta Lake](https://img.shields.io/badge/Delta%20Lake-0A192F?style=for-the-badge&logo=databricks&logoColor=white)
-![Parquet](https://img.shields.io/badge/Apache%20Parquet-0A192F?style=for-the-badge&logo=apache&logoColor=white)
-![Prefect](https://img.shields.io/badge/Prefect-5C2D91?style=for-the-badge&logo=prefect&logoColor=white)
-
-### Data Science & Analytics
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Neo4j](https://img.shields.io/badge/Neo4j-018BFF?style=for-the-badge&logo=neo4j&logoColor=white)
-![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Polars](https://img.shields.io/badge/Polars-4B8BBE?style=for-the-badge&logo=python&logoColor=white)
-
-### Workflow & Collaboration
-![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-
----
-
-## 🚀 Highlighted Projects
-
-- ⚡ **Fraud Detection System**: Built models leveraging behavioral patterns to detect anomalies.  
-- 🛠️ **ETL Automation**: Implemented pipelines that reduced runtime by **90%**.  
-- 📊 **Business Dashboards**: Developed Power BI solutions for actionable insights.    
-
-> *Ask me about: Delta Lake best practices (schema evolution, time travel), partitioning strategies, late-arrival handling, and efficient Polars pipelines.*
-“Data transforms decisions. I transform data.”
-
----
-
-## 📚 Currently Exploring
-- 🌍 Portuguese language learning.  
-- ☁️ Azure advanced services.  
-- ⚙️ Workflow orchestration with Prefect.  
-
----
-
-## 🎮 Beyond Data
-- 🚗 Passion for **cars** and automotive culture.  
-- 🎮 Gaming as a creative & problem-solving hobby.  
-- 🏃‍♂️ **Parkour & sports** to stay sharp mentally and physically.  
-- 🎶 Music lover: hip-hop, pop, rock, ballads & electronic.  
-
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=XTEP63&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="160" src="https://github-readme-streak-stats.herokuapp.com/?user=XTEP63&theme=tokyonight&hide_border=true" />
-</p>
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XTEP63&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
+<div align="center">
+  <sub>Building dependable paths from raw data to useful decisions.</sub>
+</div>

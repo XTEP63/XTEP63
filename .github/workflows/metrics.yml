@@ -1,0 +1,38 @@
+name: Profile metrics
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/metrics.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: true
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Generate focused profile metrics
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN || github.token }}
+          user: XTEP63
+          filename: assets/github-metrics.svg
+          template: classic
+          config_timezone: America/Mexico_City
+          config_display: regular
+          config_animations: yes
+          base: header, activity, community
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          output_action: commit
+          committer_message: "chore: refresh profile metrics [skip ci]"

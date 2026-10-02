@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Cloud data platform flow</title>
+  <desc id="desc">An animated architecture diagram showing data moving from sources through ingestion, Spark and Databricks processing, Delta Lake, and analytics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.5" stop-color="#0b1730"/>
+      <stop offset="1" stop-color="#111036"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.55" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="route" d="M168 221 C230 221 239 221 302 221 S408 221 470 221 S577 221 638 221 S746 221 808 221 S915 221 978 221"/>
+    <style>
+      .label{font:600 17px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.04em;fill:#e2e8f0}
+      .minor{font:500 12px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em;fill:#94a3b8}
+      .background{fill:url(#bg)}
+      .background-glow{fill:url(#glow)}
+      .node{fill:#0c1b31;stroke:#29415f;stroke-width:1.4}
+      .core{fill:#101c3c;stroke:url(#accent);stroke-width:1.8}
+      .route{fill:none;stroke:#29415f;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:5 8}
+      .route-live{fill:none;stroke:url(#accent);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:65 470;animation:signal 5s linear infinite}
+      .packet{fill:#67e8f9;filter:url(#softGlow)}
+      .pulse{fill:none;stroke:#60a5fa;stroke-width:2;transform-origin:center;animation:pulse 2.8s ease-out infinite}
+      .float{animation:float 5s ease-in-out infinite}
+      @keyframes signal{to{stroke-dashoffset:-535}}
+      @keyframes pulse{0%{opacity:.8;transform:scale(.55)}70%,100%{opacity:0;transform:scale(1.35)}}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      @media (prefers-color-scheme: light){
+        .background{fill:#f8fafc}.background-glow{opacity:.4}.label{fill:#0f172a}.minor{fill:#475569}.node{fill:#fff;stroke:#cbd5e1}.core{fill:#eff6ff}.route{stroke:#cbd5e1}
+      }
+      @media (prefers-reduced-motion: reduce){.route-live,.pulse,.float{animation:none}.route-live{stroke-dasharray:none}}
+    </style>
+  </defs>
+
+  <rect class="background" width="1200" height="390" rx="24"/>
+  <rect class="background-glow" width="1200" height="390" rx="24"/>
+  <g opacity=".22" fill="#93c5fd">
+    <circle cx="55" cy="54" r="1.5"/><circle cx="1135" cy="76" r="1.5"/><circle cx="1050" cy="324" r="1"/><circle cx="245" cy="335" r="1"/>
+    <path d="M50 90H1150M50 300H1150" stroke="#334155" stroke-width="1" stroke-dasharray="2 12"/>
+  </g>
+
+  <text x="56" y="58" class="minor">DATA PLATFORM / 01</text>
+  <text x="56" y="91" class="label" style="font-size:23px">From raw signals to trusted data products</text>
+  <text x="1144" y="58" text-anchor="end" class="minor">RELIABLE · SCALABLE · OBSERVABLE</text>
+
+  <use href="#route" class="route"/>
+  <use href="#route" class="route-live"/>
+
+  <g class="float">
+    <rect class="node" x="55" y="165" width="145" height="112" rx="18"/>
+    <path d="M92 202h33m-33 13h48m-48 13h38" stroke="#22d3ee" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+    <text x="127" y="254" text-anchor="middle" class="label">SOURCES</text>
+    <text x="127" y="294" text-anchor="middle" class="minor">API · FILES · DB</text>
+  </g>
+
+  <g class="float" style="animation-delay:-1s">
+    <rect class="node" x="275" y="165" width="145" height="112" rx="18"/>
+    <path d="M313 198v35m0 0-12-12m12 12 12-12M342 198v35" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="347" y="254" text-anchor="middle" class="label">INGEST</text>
+    <text x="347" y="294" text-anchor="middle" class="minor">BATCH · STREAM</text>
+  </g>
+
+  <g class="float" style="animation-delay:-2s">
+    <rect class="core" x="445" y="143" width="218" height="156" rx="22"/>
+    <circle class="pulse" cx="554" cy="205" r="31"/>
+    <path d="M519 211c15-29 31-42 55-42-12 10-18 20-21 29 14-4 27-3 38 3-19 1-36 8-51 22-8 7-15 7-21 2-4-4-4-9 0-14Z" fill="url(#accent)"/>
+    <text x="554" y="257" text-anchor="middle" class="label">SPARK + DATABRICKS</text>
+    <text x="554" y="320" text-anchor="middle" class="minor">DISTRIBUTED PROCESSING</text>
+  </g>
+
+  <g class="float" style="animation-delay:-3s">
+    <rect class="node" x="780" y="165" width="145" height="112" rx="18"/>
+    <path d="m818 201 34-14 34 14-34 14-34-14Zm0 15 34 14 34-14m-68 15 34 14 34-14" fill="none" stroke="#818cf8" stroke-width="3.5" stroke-linejoin="round"/>
+    <text x="852" y="264" text-anchor="middle" class="label">DELTA</text>
+    <text x="852" y="294" text-anchor="middle" class="minor">TRUSTED LAYERS</text>
+  </g>
+
+  <g class="float" style="animation-delay:-4s">
+    <rect class="node" x="1000" y="165" width="145" height="112" rx="18"/>
+    <path d="M1038 233v-18m17 18v-34m17 34v-25m17 25v-47" stroke="#a78bfa" stroke-width="7" stroke-linecap="round"/>
+    <text x="1072" y="264" text-anchor="middle" class="label">SERVE</text>
+    <text x="1072" y="294" text-anchor="middle" class="minor">BI · APIs · ML</text>
+  </g>
+
+  <g>
+    <circle class="packet" r="5"><animateMotion dur="5s" repeatCount="indefinite"><mpath href="#route"/></animateMotion></circle>
+    <circle class="packet" r="4" opacity=".75"><animateMotion dur="5s" begin="-1.65s" repeatCount="indefinite"><mpath href="#route"/></animateMotion></circle>
+    <circle class="packet" r="3" opacity=".55"><animateMotion dur="5s" begin="-3.3s" repeatCount="indefinite"><mpath href="#route"/></animateMotion></circle>
+  </g>
+
+  <text x="56" y="356" class="minor">PYTHON / SQL / SPARK</text>
+  <text x="1144" y="356" text-anchor="end" class="minor">AWS / AZURE / DELTA LAKE</text>
+</svg>
